@@ -43,7 +43,7 @@ test_suite() {
     docker compose stop -t 1 test-$image_name
 }
 
-images=${*:-"alpine ubuntu ubuntu-14.04 debian amazonlinux rockylinux8 rockylinux9 fedora"}
+images=${*:-"alpine ubuntu ubuntu-14.04 debian amazonlinux rockylinux8 rockylinux9 fedora almalinux"}
 
 for image in $images; do
     test_suite $image
